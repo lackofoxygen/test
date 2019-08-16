@@ -1,0 +1,370 @@
+@font-face {
+    font-family: Myriad Pro;
+    src: local(myriadpro), url(../font/MyriadPro-Light.ttf)
+}
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: Myriad Pro;
+}
+a{
+	text-decoration: none;
+}
+h1{
+	font-weight: 600;
+	font-size: 30px;
+}
+.header{
+	box-shadow: 0 0 30px rgba(239,239,239,1);
+}
+.container{
+	width: 1000px;
+	margin: auto;
+}
+.header-content{
+	padding: 20px 0;
+	display: flex;
+}
+.logo{
+	padding: 0 100px ;
+}
+.header-tags{
+	margin: 20px 0;
+	width: 70%;
+}
+.title{
+	display: flex;
+	align-items: center;
+	align-content: space-around;
+}
+.title h4{
+	border: 1px solid #4090db;
+	color: #4090db;
+	border-radius: 5px;
+	padding: 6px 12px;
+	margin: 0 20px;
+	font-size: 15px;
+}
+.numbers{
+	font-size: 17px;
+	margin: 20px 0;
+}
+.numbers span{
+	font-weight: 600;
+	margin: 0 0 0 30px;
+}
+.numbers span:first-child{
+	margin: 0;
+}
+.calendar{
+	display: flex;
+	align-items: center;
+}
+.calendar h4{
+	font-size: 17px;
+}
+.datepicker{
+	user-select: none;
+	border-style: none;
+	font-size: 14px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px 0 0 5px;
+	width: 120px;
+	margin: 0 0 0 20px;
+	font-weight: 600;
+}
+.calendar-btn{
+	display: inline-block;
+	width: 29px;
+	height: 29px;
+	text-align: center;
+	padding: 6px;
+	background-color: #ebebeb;
+	border: 1px solid #ccc;
+	border-left: none;
+	user-select: none;
+	cursor: pointer;
+	-webkit-transition: background-color 0.2s;
+}
+.calendar-btn:nth-child(3n+4){
+	border-radius: 0 5px 5px 0;
+	padding: 2px;
+}
+.calendar-btn:hover{
+	background-color: #ccc;
+	transition: 0.2s;
+}
+.content-container{
+	margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.card-container{
+	display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: flex-start;
+	padding: 50px 10px;
+	width: 100%;
+}
+.card{
+	margin: 1.5%;
+	width: 30%;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    -webkit-transition: border-radius 0.3s;
+    min-height: 292px;
+}
+.card img{
+	max-height: 100%;
+	width: auto;
+}
+.img-container{
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-transition: filter 0.3s;
+}
+.card-link{
+	height: 100%;
+	display: block;
+	color: #000;
+	-webkit-transition: background-color 0.3s;
+}
+.card-content{
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	font-size: 17px;
+	text-align: center;
+}
+.text-wrapper{
+	font-weight: 600;
+	display: flex;
+	align-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 20px;
+	margin: 25% 0 0 0;
+}
+.set-center{
+	margin: 12.5% 0;
+}
+.card-element{
+	display: flex;
+	width: 30%;
+	margin: auto;
+	align-items: center;
+	padding: 10px 15px;
+}
+.card-element:nth-child(3n+1){
+	padding: 0 3px;
+}
+.card-element img{
+	margin: 0 5px;
+}
+.img-container:hover{
+	filter: blur(1px);
+	transition: 0.3s;
+}
+.video-img{
+	text-align: right;
+	height: 20%;
+	vertical-align: top;
+	padding: 10px;
+}
+.load-btn{
+	text-transform: uppercase;
+	font-size: 14px;
+	border: 1px solid #000;
+	border-radius: 25px;
+	padding: 7px 35px;
+	font-weight: 600;
+	background-color: #fff;
+	cursor: pointer;
+	-webkit-transition: background-color 0.2s;
+	user-select: none;
+}
+.load-btn:hover{
+	background-color: #ccc;
+	transition: 0.2s;
+}
+.main{
+	text-align: center;
+	margin: 0 0 100px 0;
+}
+@media screen and (max-device-width: 1080px){
+	h1{
+		font-size: 50px;
+	}
+	.logo{
+		padding: 0;
+		width: 30%; /* picture is kind of small, so its a bit pixelated :S */
+	}
+	.header-tags{
+		margin: 20px 0 20px 40px;
+	}
+	.title h4{
+		border-radius: 10px;
+		padding: 15px 40px;
+		margin: 0 30px;
+		font-size: 25px;
+	}
+	.numbers{
+		font-size: 30px;
+	}
+	.calendar h4{
+		font-size: 30px;
+	}
+	.datepicker{
+		font-size: 30px;
+		padding: 5px;
+		border-radius: 5px 0 0 5px;
+		width: 180px;
+		margin: 0 0 0 20px;
+		font-weight: 600;
+	}
+	.calendar-btn{
+		display: inline-block;
+		width: 48px;
+		height: 48px;
+		text-align: center;
+		padding: 10px;
+		background-color: #ebebeb;
+		border: 1px solid #ccc;
+		border-left: none;
+		user-select: none;
+		cursor: pointer;
+		-webkit-transition: background-color 0.2s;
+	}
+	.calendar-btn img{
+		width: 90%;
+	}
+	.calendar-btn:nth-child(3n+4){
+		height: 50px;
+		padding: 6px;
+	}
+	.card{
+		width: 40%;
+		margin: 5%;
+		min-height: 390px;
+	}
+	.img-container{
+		background-size: cover;
+	}
+	.card-element{
+		font-size: 25px;
+	}
+	.card-element img{
+		height: 20px;
+	}
+	.img-container h4{
+		font-size: 25px;
+	}
+	.video-img img{
+		height: 70%;
+	}
+	.load-btn{
+		font-size: 25px;
+		padding: 14px 70px;
+		border-radius: 35px;
+	}
+	.datepicker-panel{
+		font-size: 25px;
+	}
+}
+@media screen and (max-device-width: 720px){
+	h1{
+		font-size: 60px;
+		margin: 0 0 20px 0;
+	}
+	.logo{
+		width: 30%;
+		height: 30%;
+	}
+	.header-tags{
+		margin: 20px 0 20px 20px;
+	}
+	.title{
+		flex-direction: column;
+	}
+	.title h4{
+		font-size: 35px;
+	}
+	.numbers{
+		font-size: 35px;
+	}
+	.calendar h4{
+		font-size: 30px;
+	}
+	.datepicker{
+		font-size: 30px;
+		padding: 5px;
+		border-radius: 5px 0 0 5px;
+		width: 180px;
+		margin: 0 0 0 20px;
+		font-weight: 600;
+	}
+	.calendar-btn{
+		display: inline-block;
+		width: 48px;
+		height: 48px;
+		text-align: center;
+		padding: 10px;
+		background-color: #ebebeb;
+		border: 1px solid #ccc;
+		border-left: none;
+		user-select: none;
+		cursor: pointer;
+		-webkit-transition: background-color 0.2s;
+	}
+	.calendar-btn img{
+		width: 90%;
+	}
+	.calendar-btn:nth-child(3n+4){
+		height: 50px;
+		padding: 6px;
+	}
+	.card-element{
+		font-size: 40px;
+	}
+	.card-element img{
+		height: 30px;
+	}
+	.img-container h4{
+		font-size: 40px;
+	}
+	.card{
+		width: 70%;
+		margin:  5% 15%;
+		min-height: 684px;
+	}
+	.img-container{
+		background-size: cover;
+	}
+	.video-img{
+		padding: 20px;
+	}
+	.video-img img{
+		height: 60%;
+	}
+	.text-wrapper{
+		margin: 40% 0 0 5%;
+	}
+	.set-center{
+		margin: 20% 0 20% 5%;
+	}
+	.load-btn{
+		font-size: 40px;
+		padding: 20px 90px;
+		border-radius: 45px;
+	}
+	.datepicker-panel{
+		font-size: 30px;
+	}
+}
